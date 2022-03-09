@@ -1,0 +1,33 @@
+
+public class Random{
+	
+
+	public static void main(String[] args)
+	{
+		
+	System.out.printf("THE SQUARE OF INT VALUE IS %d",   square(7));
+    System.out.printf("THE SQUARE OF DOUBLE VALUE IS %f",   square(7.5));
+    	
+		
+	
+	}
+	
+	public static double square(double dobval)
+	{
+		double result = dobval * dobval;
+		return result;
+		
+	}
+	public static int square (int intval)
+	{
+		int result  = intval * intval;
+		return result;
+		
+	}
+	
+	
+}
+
+
+		
+
