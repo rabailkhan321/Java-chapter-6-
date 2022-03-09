@@ -1,0 +1,37 @@
+
+public class Random{
+	
+	static int x =  1; 
+	public static void main(String[] args)
+	{
+		int x = 5;
+		System.out.printf( "inside main x = %d%n", x);//....5
+		useLocalvar();
+		useField();
+		useLocalvar();
+		useField();
+		
+		
+		
+	}
+	
+	public static void useLocalvar()
+	{
+		int x = 25;
+		System.out.printf( "the value of x after entering the local variable method is %d%n", x);
+		++x;
+		System.out.printf( "the value of x on exiting the local variable is %d%n", x);
+		
+	}
+	
+	public static void useField()
+	{
+		//the value of x is 10 and it will be remembered by this method so whenever this method is called again so this will initialized with 1
+		
+		System.out.printf("the value of x on entering the useField is %d%n", x); //1
+		x = x * 10;
+		System.out.printf("the value of x on exiting the useField is %d%n", x);//10
+	}
+}
+		
+
